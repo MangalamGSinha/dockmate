@@ -1,0 +1,9 @@
+include README.md
+include LICENSE
+
+recursive-include dockmate/bin *
+recursive-include dockmate/examples *
+
+# Include any additional config or data files, e.g.:
+# include dockmate/config/*.json
+# include dockmate/data/*.dat

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dockmate"
+version = "1.0.0"
+description = "All-in-one protein-ligand docking package for Windows with bundled tools"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  {name = "Mangalam Gautam Sinha", email = "your@email.com"}
+]
+keywords = ["docking", "autodock", "vina", "bioinformatics", "ligand", "protein", "drug discovery"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Bio-Informatics"
+]
+dependencies = [
+  "pdbfixer @ git+https://github.com/openmm/pdbfixer.git@v1.11",
+  "pandas>=1.3",
+  "py3Dmol>=1.8",
+  "requests>=2.26"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/dockmate"
+"Documentation" = "https://github.com/yourusername/dockmate/wiki"
+"Source" = "https://github.com/yourusername/dockmate"
+"Issue Tracker" = "https://github.com/yourusername/dockmate/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests*"]
+
+[tool.setuptools.package-data]
+"dockmate" = ["bin/**/*", "examples/**/*"]
+
+# Optional, only if you have a CLI
+# [project.scripts]
+# dockmate = "dockmate.cli:main"
