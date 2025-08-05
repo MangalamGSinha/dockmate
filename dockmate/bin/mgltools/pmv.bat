@@ -1,3 +1,3 @@
-set BABEL_DATADIR=C:\Users\MANGAL\Desktop\DockMate_v2\bin\OpenBabel-2.3.2\data
-set path=C:\Users\MANGAL\Desktop\DockMate_v2\bin\OpenBabel-2.3.2;%path%
-"C:\Users\MANGAL\Desktop\DockMate_v2\bin\python.exe" "C:\Users\MANGAL\Desktop\DockMate_v2\bin\Lib\site-packages\Pmv\bin\runPmv.py" %1 %2 %3 %4 %5 %6 %7 %8 %9
+set BABEL_DATADIR=C:\Program Files (x86)\MGLTools-1.5.7\OpenBabel-2.3.2\data
+set path=C:\Program Files (x86)\MGLTools-1.5.7\OpenBabel-2.3.2;%path%
+"C:\Program Files (x86)\MGLTools-1.5.7\python.exe" "C:\Program Files (x86)\MGLTools-1.5.7\Lib\site-packages\Pmv\bin\runPmv.py" %1 %2 %3 %4 %5 %6 %7 %8 %9
