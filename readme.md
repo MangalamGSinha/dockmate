@@ -16,7 +16,7 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/dockmate.git
+git clone https://github.com/MangalamGSinha/dockmate.git
 cd dockmate
 pip install .
 ```
