@@ -1,9 +1,16 @@
+# Core documentation and license
 include README.md
 include LICENSE
 
+# Include entire dockmate/bin folder (tools like vina, obabel, etc.)
 recursive-include dockmate/bin *
-recursive-include dockmate/examples *
 
-# Include any additional config or data files, e.g.:
+# Include utility scripts or data inside dockmate/utils
+recursive-include dockmate/utils *
+
+# Include examples outside the main package
+recursive-include examples *
+
+# (Optional) Include any configuration or data files if added later
 # include dockmate/config/*.json
 # include dockmate/data/*.dat
